@@ -54,12 +54,13 @@ int main()
 { "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" },
 };
 
-	for (int i = 0; i < 40; ++i)
+	for (int i = 0; i < 41; ++i)
 	{
 		for (int j = 0; j < 42; ++j)
 		{
-			cout << maze[i][j] << endl;
+			cout << maze[i][j];
 		}
+		cout << endl;
 	}
  
    system("pause");
