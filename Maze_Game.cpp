@@ -2,43 +2,15 @@
 #include <iostream>
 // This eliminates the need to write std::cout so it can just be cout
 using namespace std;
-
+#include <stdio.h>
 // Function for showing the Maze Map
 
-/*void print(char maze[k_MazeWidth][k_MazeHeight])
-{
-	char maze;
-	int k_MazeWidth, k_MazeHeight;
-	for(int i = 0; i < k_MazeWidth; i++)
-	{
-		for(int j = 0; j < k_MazeHeight; j++)
-		{
-			cout << maze[k_MazeWidth][k_MazeHeight];
-		}
-
-		cout << endl;
-	}
-}
-*/
 
 // 2D Array of Maze map
-
-
-// Function for the movements of the Player
-void PlayerMovement()
-{
-
-
-}
-
-// Start of the Program
 int main()
 {
 
-char maze[k_MazeWidth][k_MazeHeight];
-
-char maze[k_MazeWidth][k_MazeHeight]
-{
+   char maze[][42] = {
 { "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" },
 { "|@|     |   |   |         |           | |" },
 { "+ +-+-+ +-+ + + + + +-+-+-+ + + +-+-+ + +" },
@@ -79,19 +51,25 @@ char maze[k_MazeWidth][k_MazeHeight]
 { "| |   |     |   |   |   |   | | |     | |" },
 { "+ + +-+ +-+-+ +-+ + + + + +-+ + + +-+ + +" },
 { "| |         |     |   |     |   |   |  X|" },
-{ "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" }
+{ "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" },
 };
 
-	for (int i = 0; i < k_MazeWidth; ++i)
+	for (int i = 0; i < 40; ++i)
 	{
-		for (int j = 0; j < k_MazeHeight; ++j)
+		for (int j = 0; j < 42; ++j)
 		{
-			cout << maze[k_MazeWidth][k_MazeHeight] << " ";
+			cout << maze[i][j] << endl;
 		}
-		cout << endl;
 	}
-	system("pause");
+ 
+   system("pause");
 }
+ 
+
+
+
+
+
 
 /* 	==================================================[ BUG NOTES ]========================================================
 
