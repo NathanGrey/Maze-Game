@@ -1,5 +1,4 @@
 #include <iostream> // Starts the preprocessor command including the contents of iostream
-#include <stdio.h>
 using namespace std; // This eliminates the need to write std::cout so it can just be cout
 
 // Function for showing the Maze Map
@@ -157,6 +156,7 @@ char maze[][42] = {
 
 /* 	==================================================[ BUG NOTES ]========================================================
 
-1. 
+1. Couldn't get maze map to print. Accidentally put number of rows/cols in brackets for i and j.
+2. Player started in inccoreect position. Changed the starting coordinates to accomodate for the extra number.
 
 ========================================================================================================================== */
