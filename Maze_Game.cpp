@@ -1,16 +1,16 @@
-// Starts the preprocessor command including the contents of iostream
-#include <iostream>
-// This eliminates the need to write std::cout so it can just be cout
-using namespace std;
+#include <iostream> // Starts the preprocessor command including the contents of iostream
 #include <stdio.h>
+using namespace std; // This eliminates the need to write std::cout so it can just be cout
+
 // Function for showing the Maze Map
 
 
-// 2D Array of Maze map
+// Starts the program
 int main()
 {
 
-   char maze[][42] = {
+// 2D Array of Maze map
+char maze[][42] = {
 { "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+" },
 { "|@|     |   |   |         |           | |" },
 { "+ +-+-+ +-+ + + + + +-+-+-+ + + +-+-+ + +" },
@@ -66,11 +66,6 @@ int main()
    system("pause");
 }
  
-
-
-
-
-
 
 /* 	==================================================[ BUG NOTES ]========================================================
 
