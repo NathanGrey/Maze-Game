@@ -1,6 +1,29 @@
 #include <iostream> // Starts the preprocessor command including the contents of iostream
 using namespace std; // This eliminates the need to write std::cout so it can just be cout
 
+// Function for printing the main menu
+void printMenu()
+{
+	cout << "=========================================\n"
+		"\t \tMaze Game \n"
+		"=========================================\n"
+		"Solve in as little steps as possible\n\n\n"
+
+		"Achievements\n"
+		"--------------\n\n"
+		"Gold Trophy < 100 Steps\n"
+		"Silver Trophy < 150 Steps\n"
+		"Bronze Trophy < 300 Steps\n\n"
+
+		"Controls\n"
+		"--------------\n\n"
+		"U = Up \n"
+		"D = Down \n"
+		"L = Left \n"
+		"R = Right \n"
+		"Q = Quit Game (Boo Quitter!)\n\n\n";
+}
+
 // Function for showing the Maze Map
 void print(char maze[][42])
 {
@@ -14,9 +37,12 @@ void print(char maze[][42])
 	}
 }
 
-// Starts the program
+// Function for Player's movement through the maze
 int main()
 {
+
+// Calls bacj to print the main menu
+printMenu();
 
 // 2D Array of Maze map
 char maze[][42] = {
@@ -76,7 +102,7 @@ char maze[][42] = {
 		print(maze); // Calls back to the function and prints the maze map
 
 		char PlayerMove = ' '; // Moves the player by one space
-		cout << "Move: "; // Promts the player to move
+		cout << "\nMove: "; // Promts the player to move
 
 		// While statment to continue to prompt player to move until the goal is reached
 		while(PlayerMove != 'u' && PlayerMove != 'd' && PlayerMove != 'l' && PlayerMove != 'r' && PlayerMove != 'q')
