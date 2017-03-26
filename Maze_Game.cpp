@@ -9,12 +9,6 @@ void printMenu()
 		"=========================================\n"
 		"Solve in as little steps as possible\n\n\n"
 
-		"Achievements\n"
-		"--------------\n\n"
-		"Gold Trophy < 100 Steps\n"
-		"Silver Trophy < 150 Steps\n"
-		"Bronze Trophy < 300 Steps\n\n"
-
 		"Controls\n"
 		"--------------\n\n"
 		"U = Up \n"
@@ -181,15 +175,6 @@ char maze[][42] = {
 }
 
 /* 	==================================================[ BUG NOTES ]========================================================
-
 1. Couldn't get maze map to print. Accidentally put number of rows/cols in brackets for i and j.
 2. Player started in inccoreect position. Changed the starting coordinates to accomodate for the extra number.
-  HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-  // you can loop k higher to see more color choices
-  for(int k = 1; k < 255; k++)
-  {
-    // pick the colorattribute k you want
-    SetConsoleTextAttribute(hConsole, k);
-    cout << k << " I want to be nice today!" << endl;
-  }
 ========================================================================================================================== */
